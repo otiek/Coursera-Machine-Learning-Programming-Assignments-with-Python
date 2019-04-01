@@ -51,5 +51,4 @@ print("Train accuracy: {}".format(accuracy))
 print("Expected accuracy (with lambda =1): 83.1 (approx)")
 
 #plot decision boundary
-X = data[:, :2]
 plotDecisionBoundary(theta, data[:, :2], data[:, 2])
