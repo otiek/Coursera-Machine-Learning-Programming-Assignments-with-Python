@@ -27,7 +27,7 @@ def compute_cost(theta, X, y):
     #number of training examples
     y = y.reshape(-1, 1)
     m = y.shape[0]
-    #compute cost and gradient
+    #compute cost
     theta = theta.reshape(-1, 1)
     h = sigmoid(np.matmul(X, theta))
     J = (-1/m) * np.sum(np.multiply(y, np.log(h)) + np.multiply(1-y, np.log(1-h)))
